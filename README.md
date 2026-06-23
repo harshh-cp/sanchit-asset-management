@@ -1,16 +1,31 @@
-# asset_management_day1
+# Sanchit - Office Asset Management App
 
-A new Flutter project.
+A Flutter-based Office Asset Management Application for managing and 
+tracking office assets such as laptops, monitors, keyboards, mobile 
+devices, printers, and other equipment.
 
-## Getting Started
+## Features
+- Asset Management (Add, Edit, View with auto-generated IDs like AST-0001)
+- Asset Assignment to employees with date and remarks
+- Asset Return with confirmation and history logging
+- Complete Asset History (Created, Updated, Assigned, Returned)
+- QR Code generation per asset + QR Scanner
+- Dashboard with real-time statistics
+- Employee Management
 
-This project is a starting point for a Flutter application.
+## Tech Stack
+- Flutter / Dart
+- BLoC State Management (flutter_bloc)
+- SQLite — offline-first storage (sqflite)
+- Clean Architecture with Repository pattern
+- QR Flutter + Mobile Scanner
 
-A few resources to get you started if this is your first Flutter project:
+## Architecture
+Three clear layers:
+- **Data Layer** — Models + AssetRepository (single source of truth)
+- **Presentation Layer** — BLoC (events/states) + Screens
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## Developed By
+Harshavardhan Chavan Patil
+BCA — Dr. M.S. Sheshgiri College of Engineering & Technology, Belagavi
+Internship Assignment — Ajinkya Technologies, Belagavi
